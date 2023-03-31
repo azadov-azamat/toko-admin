@@ -7,7 +7,7 @@ function Layout({children}: LayoutProps): JSX.Element {
     return (
         <div className={'flex w-full h-screen'}>
             <Sidebar/>
-            <main className={'p-4 sm:ml-64 transition-transform duration-500'}>{children}</main>
+            <main className={'p-4 sm:ml-64 transition-transform duration-500 mt-10'}>{children}</main>
         </div>
     );
 }

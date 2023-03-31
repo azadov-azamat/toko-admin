@@ -19,12 +19,12 @@ function Sidebar() {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop
         setPosition(winScroll)
     }
-
+    console.log(openToggle)
     return (
         <>
             <Button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar"
                     aria-controls="default-sidebar" type="button" onClick={toggle}
-                    className={`flex ${position !== 0 || !openToggle ? 'fixed' : ''} ${!openToggle ? 'left-1/2' : ''} h-10 p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden bg-gray-100`}>
+                    className={`fixed z-20 ${!openToggle ? 'left-1/2' : ''} w-10 h-10 p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden bg-gray-100`}>
                 <span className="sr-only">Open sidebar</span>
                 <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg">
