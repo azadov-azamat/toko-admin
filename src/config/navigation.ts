@@ -5,10 +5,10 @@ export const CabinetNavigation = [
         icon: 'AiOutlineHome',
         navLink: '/dashboard'
     },
-    {
-        id: 2,
-        title: 'Variations',
-        icon: 'VscSymbolVariable',
-        navLink: '/variations'
-    }
+    // {
+    //     id: 2,
+    //     title: 'Variations',
+    //     icon: 'VscSymbolVariable',
+    //     navLink: '/variations'
+    // }
 ]
